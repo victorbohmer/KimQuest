@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MiniProjektGame
+namespace GameDemo1
 {
     class Player
     {
