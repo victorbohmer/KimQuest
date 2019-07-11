@@ -8,6 +8,9 @@ namespace GameDemo1
     {
         public int Health { get; private set; }
         public int Gold { get; private set; }
+        public int Experience { get; private set; } = 0;
+        public int Level { get; private set; } = 1;
+        public int ExperinceToLevelUp { get; } = 100;
 
 
         private int minDamage;
@@ -37,6 +40,33 @@ namespace GameDemo1
             }
 
         }
+        public string AddExperience(int experienceGained)
+        {
+            
+
+            Experience += experienceGained;
+
+            int resultOfAddedExperience = ExperinceToLevelUp - Experience;
+
+            if (Experience >= ExperinceToLevelUp)
+            {
+                LevelUp();
+                Experience -= ExperinceToLevelUp;
+                return "Grattis du har gått upp en level!";
+            }
+            else
+            {
+               return $"Du fick {experienceGained} och har kvar {resultOfAddedExperience} till nästa level!";
+            }
+        }
+        void LevelUp()
+        {
+            Level++;
+            Health += 20;
+            minDamage += 5;
+            maxDamage += 5;
+        }
+
 
     }
 }
