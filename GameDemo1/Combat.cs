@@ -6,17 +6,24 @@ namespace GameDemo1
 {
     class Combat
     {
-        Monster attackingMonster;
+        public Monster attackingMonster { get; set; }
         public Combat()
         {
-
             attackingMonster = GetRandomMonster();
+        }
+
+        public CombatOutcome CombatRound()
+        {
 
         }
 
         private Monster GetRandomMonster()
         {
-            throw new NotImplementedException();
+            //List<Monster> encounterTable = new List<Monster>();
+
+            return new Mygga();
+
+
         }
     }
 }

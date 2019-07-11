@@ -57,6 +57,7 @@
     </ApplicationDefinition>
     <Compile Include="Combat.cs" />
     <Compile Include="Direction.cs" />
+    <Compile Include="Interface1.cs" />
     <Compile Include="KeyParser.cs" />
     <Compile Include="Monster.cs" />
     <Compile Include="Player.cs" />
@@ -139,6 +140,11 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="PlainsBackground.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Mygga.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

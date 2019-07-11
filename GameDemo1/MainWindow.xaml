@@ -12,6 +12,7 @@
         <BitmapImage x:Key="Forest" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="Forest.jpg"/>
         <BitmapImage x:Key="ForestBackground" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="ForestBackground.jpg"/>
         <BitmapImage x:Key="Ocean" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="Water.jpg"/>
+        <BitmapImage x:Key="Mygga" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="Mygga.jpg"/>
     </Window.Resources>
     <Grid Margin="0,0,-182.4,-229">
         <Grid.ColumnDefinitions>
@@ -49,6 +50,7 @@
         <Image x:Name="background" HorizontalAlignment="Left" Height="320" Margin="32,26,0,0" VerticalAlignment="Top" Width="320" Source="ForestBackground.jpg"/>
         <Image x:Name="kimpan_BIG" HorizontalAlignment="Left" Height="128" Margin="63,183,0,0" VerticalAlignment="Top" Width="91" Source="kimpanförFAN.png"/>
         <TextBox x:Name="Log" HorizontalAlignment="Left" FontSize="20" Height="680" Margin="437,44,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="381"/>
+        <Image x:Name="Enemy" HorizontalAlignment="Left" Height="128" Margin="192,133,0,0" VerticalAlignment="Top" Width="128" Source="{DynamicResource Mygga}/>
 
     </Grid>
 </Window>

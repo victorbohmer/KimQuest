@@ -57,6 +57,7 @@ namespace GameDemo1
             if (random.Next(6) == 0)
             {
                 combat = new Combat();
+                this.Enemy.Source = (ImageSource)FindResource(combat.attackingMonster.Name);
                 gameMode = "Combat";
             }
                 
