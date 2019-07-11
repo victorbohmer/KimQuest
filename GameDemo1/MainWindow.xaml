@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="800" Width="1280" KeyDown="InputReceived">
     <Window.Resources>
-        <BitmapImage x:Key="Plains" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="C:\Projekt\AcceleratedLearning\C#\GameDemo1\GameDemo1\Images\Grass.jpg"/>
-        <BitmapImage x:Key="Forest" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="C:\Projekt\AcceleratedLearning\C#\GameDemo1\GameDemo1\Images\Forest.jpg"/>
-        <BitmapImage x:Key="Ocean" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="C:\Projekt\AcceleratedLearning\C#\GameDemo1\GameDemo1\Images\Water.jpg"/>
+        <BitmapImage x:Key="Plains" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="Grass.jpg"/>
+        <BitmapImage x:Key="Forest" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="Forest.jpg"/>
+        <BitmapImage x:Key="Ocean" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="Water.jpg"/>
     </Window.Resources>
     <Grid Margin="0,0,-182.4,-229">
         <Grid.ColumnDefinitions>
