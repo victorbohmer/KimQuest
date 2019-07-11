@@ -48,7 +48,7 @@
         <Image x:Name="kimpan" Grid.Column="1" HorizontalAlignment="Left" Height="67" Margin="175.8,152,0,0" VerticalAlignment="Top" Width="46" Source="kimpanförFAN.png"/>
         <Image x:Name="background" HorizontalAlignment="Left" Height="320" Margin="32,26,0,0" VerticalAlignment="Top" Width="320" Source="ForestBackground.jpg"/>
         <Image x:Name="kimpan_BIG" HorizontalAlignment="Left" Height="128" Margin="63,183,0,0" VerticalAlignment="Top" Width="91" Source="kimpanförFAN.png"/>
-        <TextBox x:Name="Log" HorizontalAlignment="Left" Height="680" Margin="437,44,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="381"/>
+        <TextBox x:Name="Log" HorizontalAlignment="Left" FontSize="20" Height="680" Margin="437,44,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="381"/>
 
     </Grid>
 </Window>
