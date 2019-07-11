@@ -67,6 +67,7 @@ namespace GameDemo1
 
         private void DrawMap()
         {
+            this.background.Source = (ImageSource)FindResource(map.GetUITileName(3, 3) + "Background");
 
             this.image_1_1.Source = (ImageSource)FindResource(map.GetUITileName(1, 1));
             this.image_1_2.Source = (ImageSource)FindResource(map.GetUITileName(1, 2));
