@@ -1,0 +1,15 @@
+C:\Projekt\AcceleratedLearning\C#\GameDemo1\GameDemo1\bin\Debug\GameDemo1.exe.config
+C:\Projekt\AcceleratedLearning\C#\GameDemo1\GameDemo1\bin\Debug\GameDemo1.exe
+C:\Projekt\AcceleratedLearning\C#\GameDemo1\GameDemo1\bin\Debug\GameDemo1.pdb
+C:\Projekt\AcceleratedLearning\C#\GameDemo1\GameDemo1\obj\Debug\MainWindow.g.cs
+C:\Projekt\AcceleratedLearning\C#\GameDemo1\GameDemo1\obj\Debug\App.g.cs
+C:\Projekt\AcceleratedLearning\C#\GameDemo1\GameDemo1\obj\Debug\GameDemo1_MarkupCompile.cache
+C:\Projekt\AcceleratedLearning\C#\GameDemo1\GameDemo1\obj\Debug\GameDemo1_MarkupCompile.lref
+C:\Projekt\AcceleratedLearning\C#\GameDemo1\GameDemo1\obj\Debug\MainWindow.baml
+C:\Projekt\AcceleratedLearning\C#\GameDemo1\GameDemo1\obj\Debug\GameDemo1.g.resources
+C:\Projekt\AcceleratedLearning\C#\GameDemo1\GameDemo1\obj\Debug\GameDemo1.Properties.Resources.resources
+C:\Projekt\AcceleratedLearning\C#\GameDemo1\GameDemo1\obj\Debug\GameDemo1.csproj.GenerateResource.cache
+C:\Projekt\AcceleratedLearning\C#\GameDemo1\GameDemo1\obj\Debug\GameDemo1.csproj.CoreCompileInputs.cache
+C:\Projekt\AcceleratedLearning\C#\GameDemo1\GameDemo1\obj\Debug\GameDemo1.exe
+C:\Projekt\AcceleratedLearning\C#\GameDemo1\GameDemo1\obj\Debug\GameDemo1.pdb
+C:\Projekt\AcceleratedLearning\C#\GameDemo1\GameDemo1\obj\Debug\GameDemo1.csprojAssemblyReference.cache
