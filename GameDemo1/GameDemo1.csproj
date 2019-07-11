@@ -60,6 +60,7 @@
     <Compile Include="Interface1.cs" />
     <Compile Include="KeyParser.cs" />
     <Compile Include="Monster.cs" />
+    <Compile Include="Mygga.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Tile.cs" />
     <Page Include="MainWindow.xaml">
@@ -144,7 +145,12 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Mygga.jpg">
+    <Resource Include="Mygga.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="NoEnemy.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

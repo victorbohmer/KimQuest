@@ -4,30 +4,24 @@ using System.Text;
 
 namespace GameDemo1
 {
-    class Player
+    static class Player
     {
-        public int Health { get; private set; }
-        public int Gold { get; private set; }
-        public int Experience { get; private set; } = 0;
-        public int Level { get; private set; } = 1;
-        public int ExperinceToLevelUp { get; } = 100;
+        static public int Health { get; private set; } = 100;
+        static public int Gold { get; private set; } = 10;
+        static public int Experience { get; private set; } = 0;
+        static public int Level { get; private set; } = 1;
+        static public int ExperinceToLevelUp { get; } = 100;
 
 
-        private int minDamage;
-        private int maxDamage;
-        public Player()
-        {
-            minDamage = 10;
-            maxDamage = 25;
-            Health = 100;
-            Gold = 10;
-        }
-        public int DoDamage()
+        static private int minDamage = 10;
+        static private int maxDamage = 25;
+       
+        static public int DoDamage()
         {
             Random random = new Random();
             return random.Next(minDamage, maxDamage);
         }
-        public string TakeDamage(int damageTaken)
+        static public string TakeDamage(int damageTaken)
         {
             if (damageTaken < Health)
             {
@@ -40,7 +34,7 @@ namespace GameDemo1
             }
 
         }
-        public string AddExperience(int experienceGained)
+        static public string AddExperience(int experienceGained)
         {
             
 
@@ -59,7 +53,7 @@ namespace GameDemo1
                return $"Du fick {experienceGained} och har kvar {resultOfAddedExperience} till nästa level!";
             }
         }
-        void LevelUp()
+        static void LevelUp()
         {
             Level++;
             Health += 20;

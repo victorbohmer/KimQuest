@@ -12,7 +12,8 @@
         <BitmapImage x:Key="Forest" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="Forest.jpg"/>
         <BitmapImage x:Key="ForestBackground" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="ForestBackground.jpg"/>
         <BitmapImage x:Key="Ocean" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="Water.jpg"/>
-        <BitmapImage x:Key="Mygga" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="Mygga.jpg"/>
+        <BitmapImage x:Key="Mygga" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="Mygga.png"/>
+        <BitmapImage x:Key="NoEnemy" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="NoEnemy.png"/>
     </Window.Resources>
     <Grid Margin="0,0,-182.4,-229">
         <Grid.ColumnDefinitions>
@@ -49,8 +50,11 @@
         <Image x:Name="kimpan" Grid.Column="1" HorizontalAlignment="Left" Height="67" Margin="175.8,152,0,0" VerticalAlignment="Top" Width="46" Source="kimpanförFAN.png"/>
         <Image x:Name="background" HorizontalAlignment="Left" Height="320" Margin="32,26,0,0" VerticalAlignment="Top" Width="320" Source="ForestBackground.jpg"/>
         <Image x:Name="kimpan_BIG" HorizontalAlignment="Left" Height="128" Margin="63,183,0,0" VerticalAlignment="Top" Width="91" Source="kimpanförFAN.png"/>
-        <TextBox x:Name="Log" HorizontalAlignment="Left" FontSize="20" Height="680" Margin="437,44,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="381"/>
-        <Image x:Name="Enemy" HorizontalAlignment="Left" Height="128" Margin="192,133,0,0" VerticalAlignment="Top" Width="128" Source="{DynamicResource Mygga}/>
+        <TextBox x:Name="Log" HorizontalAlignment="Left" FontSize="20" Height="646" Margin="437,78,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="381"/>
+        <Image x:Name="Enemy" HorizontalAlignment="Left" Height="159" Margin="192,152,0,0" VerticalAlignment="Top" Width="160" Source="{DynamicResource Mygga}"/>
+        <TextBox x:Name="KimHP" HorizontalAlignment="Left" Height="26" Margin="32,351,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="106"/>
+        <TextBox x:Name="EnemyHP" HorizontalAlignment="Left" Height="26" Margin="246,351,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="106"/>
+        <TextBlock x:Name="Titel" HorizontalAlignment="Left" Height="47" Margin="437,26,0,0" FontSize="30" TextAlignment="Center" TextWrapping="Wrap" Text="KimQuest" VerticalAlignment="Top" Width="381"/>
 
     </Grid>
 </Window>

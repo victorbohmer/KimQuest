@@ -28,7 +28,8 @@ namespace GameDemo1
             InitializeComponent();
             CreateMap();
             DrawMap();
-
+            this.KimHP.Text = $"Kim HP: {Player.Health}";
+            this.Enemy.Source = (ImageSource)FindResource("NoEnemy");
         }
 
         private void InputReceived(object sender, KeyEventArgs e)
@@ -58,6 +59,9 @@ namespace GameDemo1
             {
                 combat = new Combat();
                 this.Enemy.Source = (ImageSource)FindResource(combat.attackingMonster.Name);
+                this.Log.Text += $"\nDu blev anfallen av en {combat.attackingMonster.Name}";
+                this.KimHP.Text = $"Kim HP: {Player.Health}";
+                this.EnemyHP.Text = $"Enemy HP: {combat.attackingMonster.Health}";
                 gameMode = "Combat";
             }
                 
@@ -66,7 +70,21 @@ namespace GameDemo1
         private void CombatRound(Key keyDown)
         {
             
+            CombatOutcome outcome = combat.CombatRound(this.Log);
+            this.KimHP.Text = $"Kim HP: {Player.Health}";
+            this.EnemyHP.Text = $"Enemy HP: {combat.attackingMonster.Health}";
 
+            if (outcome == CombatOutcome.PlayerWon)
+            {
+                this.Log.Text += $"\nDu vann!";
+                this.EnemyHP.Text = "";
+                this.Enemy.Source = (ImageSource)FindResource("NoEnemy");
+                this.Log.Text = "";
+                gameMode = "Map";
+            }
+                
+
+            
 
         }
 

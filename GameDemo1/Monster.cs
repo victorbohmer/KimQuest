@@ -6,14 +6,14 @@ namespace GameDemo1
 {
     abstract class Monster
     {
-        public int Health { get; private set; }
-        public int Name { get; private set; }
+        public int Health { get; protected set; }
+        public string Name { get; protected set; }
 
-        private int minDamage;
-        private int maxDamage;
+        protected int minDamage;
+        protected int maxDamage;
 
-        private int minGold;
-        private int maxGold;
+        protected int minGold;
+        protected int maxGold;
 
         public int DropGold()
         {

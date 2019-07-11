@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Controls;
 
 namespace GameDemo1
 {
@@ -12,8 +13,28 @@ namespace GameDemo1
             attackingMonster = GetRandomMonster();
         }
 
-        public CombatOutcome CombatRound()
+        public CombatOutcome CombatRound(TextBox textBox)
         {
+
+            int playerDamage = Player.DoDamage();
+            string attackResponse = attackingMonster.TakeDamage(playerDamage);
+
+            textBox.Text += "\n" + attackResponse;
+
+            if (attackResponse == "BOOM!! Du SMÄÄÄÄCKAAA monster!")
+                return CombatOutcome.PlayerWon;
+
+            int monsterDamage = attackingMonster.DoDamage();
+            string defenceResponse = Player.TakeDamage(monsterDamage);
+
+            textBox.Text += "\n" + defenceResponse;
+
+            if (defenceResponse == "Du är FAN SMÄÄÄÄCKAAAD!")
+                return CombatOutcome.PlayerLost;
+
+            //Implicit else
+            return CombatOutcome.NewRound;
+
 
         }
 
