@@ -5,6 +5,8 @@ obj
 packages
 .vs
 .vscode
+GameDemo1/.vs
+GameDemo1/obj
 
 # files
 
@@ -17,4 +19,3 @@ packages
 # specific files
 
 project.lock.json
-
