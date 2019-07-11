@@ -21,7 +21,7 @@ namespace GameDemo1
     public partial class MainWindow : Window
     {
         Map map = new Map();
-        Combat combat = new Combat();
+        Combat combat;
         string gameMode = "Map";
         public MainWindow()
         {
@@ -39,10 +39,32 @@ namespace GameDemo1
                 case "Map":
                     map.TryToMove(KeyParser.Direction(keyDown));
                     DrawMap();
+                    RollForEncounter();
+                    break;
+                case "Combat":
+                    CombatRound(keyDown);
                     break;
                 default:
                     break;
             }
+
+
+        }
+
+        private void RollForEncounter()
+        {
+            Random random = new Random();
+            if (random.Next(6) == 0)
+            {
+                combat = new Combat();
+                gameMode = "Combat";
+            }
+                
+        }
+
+        private void CombatRound(Key keyDown)
+        {
+            
 
 
         }
