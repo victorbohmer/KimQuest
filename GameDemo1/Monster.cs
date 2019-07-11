@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GameDemo1
 {
-    class Monster
+    abstract class Monster
     {
         public int Health { get; private set; }
         public int Name { get; private set; }
@@ -14,12 +14,7 @@ namespace GameDemo1
 
         private int minGold;
         private int maxGold;
-        public Monster()
-        {
-            minDamage = 10;
-            maxDamage = 20;
-            Health = 100;
-        }
+
         public int DropGold()
         {
             Random random = new Random();
