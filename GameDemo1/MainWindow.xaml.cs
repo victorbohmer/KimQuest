@@ -21,6 +21,7 @@ namespace GameDemo1
     public partial class MainWindow : Window
     {
         Map map = new Map();
+        Combat combat = new Combat();
         string gameMode = "Map";
         public MainWindow()
         {
