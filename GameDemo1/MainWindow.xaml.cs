@@ -21,15 +21,17 @@ namespace GameDemo1
     public partial class MainWindow : Window
     {
         Map map = new Map();
-        Combat combat = new Combat();
+        Combat combat;
         GameMode gameMode = GameMode.Map;
         public MainWindow()
         {
             InitializeComponent();
             CreateMap();
             DrawMap();
-            this.KimHP.Text = $"Kim HP: {Player.Health}";
-            this.Enemy.Source = (ImageSource)FindResource("NoEnemy");
+            combat = new Combat(Log);
+            KimHP.Text = $"Kim HP: {Player.Health}";
+            Enemy.Source = (ImageSource)FindResource("NoEnemy");
+            
         }
 
         private void InputReceived(object sender, KeyEventArgs e)
@@ -72,7 +74,7 @@ namespace GameDemo1
         private void CombatRound(Key keyDown)
         {
             
-            CombatOutcome outcome = combat.CombatRound(this.Log);
+            CombatOutcome outcome = combat.CombatRound();
             KimHP.Text = $"Kim HP: {Player.Health}";
             EnemyHP.Text = $"Enemy HP: {combat.attackingMonster.Health}";
 

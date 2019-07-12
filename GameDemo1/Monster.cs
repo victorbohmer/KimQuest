@@ -26,16 +26,16 @@ namespace GameDemo1
             Random random = new Random();
             return random.Next(minDamage, maxDamage);
         }
-        public string TakeDamage(int damageTaken)
+        public CombatOutcome TakeDamage(int damageTaken)
         {
             if (damageTaken < Health)
             {
                 Health -= damageTaken;
-                return $"Du smäll till {NameSubject.ToLower()} för {damageTaken} skada.";
+                return CombatOutcome.NewRound;
             }
             else
             {
-                return $"BOOM!! Du SMÄÄÄÄCKAAA {NameSubject.ToLower()}!";
+                return CombatOutcome.PlayerWon;
             }
 
         }

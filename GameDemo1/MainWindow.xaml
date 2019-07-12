@@ -60,7 +60,7 @@
         <Image x:Name="Enemy" HorizontalAlignment="Left" Height="200" Margin="167,123,0,0" VerticalAlignment="Top" Width="200" Source="{DynamicResource Mygga}"/>
         <TextBox x:Name="KimHP" HorizontalAlignment="Left" Height="26" Margin="40,364,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="106"/>
         <TextBox x:Name="EnemyHP" HorizontalAlignment="Left" Height="26" Margin="254,364,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="106"/>
-        <TextBlock x:Name="Titel" HorizontalAlignment="Left" Height="47" Margin="415,18,0,0" FontSize="30" TextAlignment="Center" TextWrapping="Wrap" Text="KimQuest" VerticalAlignment="Top" Width="381"/>
+        <TextBlock x:Name="Titel" HorizontalAlignment="Left" Height="47" Margin="415,18,0,0" FontSize="30" Foreground="LightYellow"  TextAlignment="Center" TextWrapping="Wrap" Text="KimQuest" VerticalAlignment="Top" Width="381"/>
 
     </Grid>
 </Window>

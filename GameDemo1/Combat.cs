@@ -9,8 +9,10 @@ namespace GameDemo1
     {
         public Monster attackingMonster { get; set; }
         Random random = new Random();
-        public Combat()
+        TextBox textBox;
+        public Combat(TextBox textBox)
         {
+            this.textBox = textBox;
             attackingMonster = GetRandomMonster();
         }
 
@@ -19,34 +21,59 @@ namespace GameDemo1
             attackingMonster = GetRandomMonster();
         }
 
-        public CombatOutcome CombatRound(TextBox textBox)
+        public CombatOutcome CombatRound()
         {
+            CombatOutcome combatOutcome;
 
             int playerDamage = Player.DoDamage();
-            string attackResponse = attackingMonster.TakeDamage(playerDamage);
+            combatOutcome = attackingMonster.TakeDamage(playerDamage);
 
-            textBox.Text += "\n" + attackResponse;
+            LogPlayerDamage(playerDamage);
 
-            if (attackResponse.Contains($"BOOM!! Du SMÄÄÄÄCKAAA"))
-                return CombatOutcome.PlayerWon;
+            if (combatOutcome == CombatOutcome.PlayerWon)
+            {
+                LogPlayerWon();
+                return combatOutcome;
+            }
 
             int monsterDamage = attackingMonster.DoDamage();
-            string defenceResponse = Player.TakeDamage(monsterDamage, attackingMonster.NameSubject);
+            combatOutcome = Player.TakeDamage(monsterDamage, attackingMonster.NameSubject);
 
-            textBox.Text += "\n" + defenceResponse;
+            LogMonsterDamage(monsterDamage);
 
-            if (defenceResponse.Contains("Du är FAN SMÄÄÄÄCKAAAD!"))
-                return CombatOutcome.PlayerLost;
+            if (combatOutcome == CombatOutcome.PlayerLost)
+            {
+                LogPlayerLost();
+                return combatOutcome;
+            }
 
-            //Implicit else
             return CombatOutcome.NewRound;
 
+        }
+
+        private void LogPlayerLost()
+        {
+            textBox.Text += "\nDu är FAN SMÄÄÄÄCKAAAD!";
+        }
+
+        private void LogPlayerWon()
+        {
+            textBox.Text += $"\nBOOM!! Du SMÄÄÄÄCKAAA {attackingMonster.NameSubject.ToLower()}!";
+        }
+
+        private void LogPlayerDamage(int playerDamage)
+        {
+            textBox.Text += $"\nDu smäll till {attackingMonster.NameSubject.ToLower()} för {playerDamage} skada.";
+        }
+
+        private void LogMonsterDamage(int monsterDamage)
+        {
+            textBox.Text += $"\n{attackingMonster.Name} smäll tillbax för {monsterDamage} skada!";
 
         }
 
         private Monster GetRandomMonster()
         {
-            //List<Monster> encounterTable = new List<Monster>();
 
             int monsterType = random.Next(3);
 
@@ -59,9 +86,6 @@ namespace GameDemo1
                 default:
                     return new Mygga();
             }
-
-            
-
 
         }
     }

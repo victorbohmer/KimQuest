@@ -21,17 +21,18 @@ namespace GameDemo1
             Random random = new Random();
             return random.Next(minDamage, maxDamage);
         }
-        static public string TakeDamage(int damageTaken, string monsterName)
+        static public CombatOutcome TakeDamage(int damageTaken, string monsterName)
         {
-            if (damageTaken < Health)
+            Health -= damageTaken;
+            if (Health > 0)
             {
-                Health -= damageTaken;
-                return $"{monsterName} smäll tillbax för {damageTaken} skada!";
+                return CombatOutcome.NewRound;
+                //return $"{monsterName} smäll tillbax för {damageTaken} skada!";
             }
             else
             {
-                Health -= damageTaken;
-                return $"{monsterName} smäll tillbax för {damageTaken} skada! \nDu är FAN SMÄÄÄÄCKAAAD!";
+                return CombatOutcome.PlayerLost;
+                //return $"{monsterName} smäll tillbax för {damageTaken} skada! \nDu är FAN SMÄÄÄÄCKAAAD!";
             }
 
         }
