@@ -58,7 +58,7 @@
     <Compile Include="Björn.cs" />
     <Compile Include="Combat.cs" />
     <Compile Include="Direction.cs" />
-    <Compile Include="Interface1.cs" />
+    <Compile Include="Enums.cs" />
     <Compile Include="KeyParser.cs" />
     <Compile Include="Monster.cs" />
     <Compile Include="Mygga.cs" />

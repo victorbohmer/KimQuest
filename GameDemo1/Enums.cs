@@ -10,4 +10,9 @@ namespace GameDemo1
     {
         NewRound,PlayerLost,PlayerWon
     }
+    enum GameMode
+    {
+        Map, Combat, PlayerLost
+    }
+
 }
