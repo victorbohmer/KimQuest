@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace GameDemo1
 {
-    class Mygga : Monster
+    class NollÅtta : Monster
     {
-        public Mygga()
+        public NollÅtta()
         {
-            Health = 40;
-            Name = "Mygga";
-            NameSubject = "Myggan";
+            Health = 50;
+            Name = "NollÅtta";
+            NameSubject = "Nollåttan";
             minDamage = 4;
-            maxDamage = 8;
+            maxDamage = 10;
         }
     }
 }

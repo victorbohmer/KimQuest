@@ -8,6 +8,7 @@ namespace GameDemo1
     {
         public int Health { get; protected set; }
         public string Name { get; protected set; }
+        public string NameSubject { get; protected set; }
 
         protected int minDamage;
         protected int maxDamage;
@@ -30,11 +31,11 @@ namespace GameDemo1
             if (damageTaken < Health)
             {
                 Health -= damageTaken;
-                return $"Du gjorde {damageTaken} i skada på monster {Name} monster har nu {Health} i liv";
+                return $"Du smäll till {NameSubject.ToLower()} för {damageTaken} skada.";
             }
             else
             {
-                return "BOOM!! Du SMÄÄÄÄCKAAA monster!";
+                return $"BOOM!! Du SMÄÄÄÄCKAAA {NameSubject.ToLower()}!";
             }
 
         }

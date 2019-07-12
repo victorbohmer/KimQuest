@@ -21,7 +21,7 @@ namespace GameDemo1
     public partial class MainWindow : Window
     {
         Map map = new Map();
-        Combat combat;
+        Combat combat = new Combat();
         string gameMode = "Map";
         public MainWindow()
         {
@@ -57,11 +57,10 @@ namespace GameDemo1
             Random random = new Random();
             if (random.Next(6) == 0)
             {
-                combat = new Combat();
-                this.Enemy.Source = (ImageSource)FindResource(combat.attackingMonster.Name);
-                this.Log.Text += $"\nDu blev anfallen av en {combat.attackingMonster.Name}";
-                this.KimHP.Text = $"Kim HP: {Player.Health}";
-                this.EnemyHP.Text = $"Enemy HP: {combat.attackingMonster.Health}";
+                combat.NewMonster();
+                Enemy.Source = (ImageSource)FindResource(combat.attackingMonster.Name);
+                Log.Text += $"\nDu blev anfallen av en {combat.attackingMonster.Name.ToLower()}!";
+                EnemyHP.Text = $"Enemy HP: {combat.attackingMonster.Health}";
                 gameMode = "Combat";
             }
                 
@@ -71,20 +70,28 @@ namespace GameDemo1
         {
             
             CombatOutcome outcome = combat.CombatRound(this.Log);
-            this.KimHP.Text = $"Kim HP: {Player.Health}";
-            this.EnemyHP.Text = $"Enemy HP: {combat.attackingMonster.Health}";
+            KimHP.Text = $"Kim HP: {Player.Health}";
+            EnemyHP.Text = $"Enemy HP: {combat.attackingMonster.Health}";
 
-            if (outcome == CombatOutcome.PlayerWon)
+            switch (outcome)
             {
-                this.Log.Text += $"\nDu vann!";
-                this.EnemyHP.Text = "";
-                this.Enemy.Source = (ImageSource)FindResource("NoEnemy");
-                this.Log.Text = "";
-                gameMode = "Map";
+                case CombatOutcome.NewRound:
+                    break;
+                case CombatOutcome.PlayerLost:
+                    kimpan.Source = (ImageSource)FindResource("KimpanDöd");
+                    kimpan_BIG.Source = (ImageSource)FindResource("KimpanDöd");
+                    gameMode = "PlayerLost";
+                    break;
+                case CombatOutcome.PlayerWon:
+                    EnemyHP.Text = "";
+                    Enemy.Source = (ImageSource)FindResource("NoEnemy");
+                    Log.Text = "Du vann!";
+                    gameMode = "Map";
+                    break;
+                default:
+                    break;
             }
-                
 
-            
 
         }
 

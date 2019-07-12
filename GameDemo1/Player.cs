@@ -21,16 +21,17 @@ namespace GameDemo1
             Random random = new Random();
             return random.Next(minDamage, maxDamage);
         }
-        static public string TakeDamage(int damageTaken)
+        static public string TakeDamage(int damageTaken, string monsterName)
         {
             if (damageTaken < Health)
             {
                 Health -= damageTaken;
-                return $"Du tog {damageTaken} i skada! från monster 'vadnumonsternamnär' Du har kvar {Health} i liv";
+                return $"{monsterName} smäll dig för {damageTaken} skada!";
             }
             else
             {
-                return "Du är FAN SMÄÄÄÄCKAAAD!";
+                Health -= damageTaken;
+                return $"{monsterName} smäll dig för {damageTaken} skada! \nDu är FAN SMÄÄÄÄCKAAAD!";
             }
 
         }

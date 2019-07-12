@@ -55,12 +55,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Björn.cs" />
     <Compile Include="Combat.cs" />
     <Compile Include="Direction.cs" />
     <Compile Include="Interface1.cs" />
     <Compile Include="KeyParser.cs" />
     <Compile Include="Monster.cs" />
     <Compile Include="Mygga.cs" />
+    <Compile Include="NollÅtta.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Tile.cs" />
     <Page Include="MainWindow.xaml">
@@ -125,11 +127,6 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="kimpanförFAN.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="ForestBackground.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -151,6 +148,31 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="NoEnemy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Björn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="NollÅtta.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="woodBackgroundPlate.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="kimpanförFAN.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="kimpanDöd.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

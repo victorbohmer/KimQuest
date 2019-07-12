@@ -14,47 +14,53 @@
         <BitmapImage x:Key="Ocean" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="Water.jpg"/>
         <BitmapImage x:Key="Mygga" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="Mygga.png"/>
         <BitmapImage x:Key="NoEnemy" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="NoEnemy.png"/>
+        <BitmapImage x:Key="Björn" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="Björn.png"/>
+        <BitmapImage x:Key="NollÅtta" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="NollÅtta.png"/>
+        <BitmapImage x:Key="KimpanDöd" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="KimpanDöd.png"/>
+
     </Window.Resources>
     <Grid Margin="0,0,-182.4,-229">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="883*"/>
             <ColumnDefinition Width="573*"/>
         </Grid.ColumnDefinitions>
-        <Image x:Name="BackgroundPlate" HorizontalAlignment="Left" Height="797" VerticalAlignment="Top" Width="1328" Grid.ColumnSpan="2" Source="parchment.jpg"/>
 
-        <Image x:Name="image_1_1" HorizontalAlignment="Left" Width="64" Height="64" Margin="34.8,32,0,0" VerticalAlignment="Top" Source="{DynamicResource Ocean}" Grid.Column="1"/>
-        <Image x:Name="image_1_2" HorizontalAlignment="Left" Width="64" Height="64" Margin="98.8,32,0,0" VerticalAlignment="Top" Source="{DynamicResource Forest}" Grid.Column="1"/>
-        <Image x:Name="image_1_3" HorizontalAlignment="Left" Width="64" Height="64" Margin="162.8,32,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
-        <Image x:Name="image_1_4" HorizontalAlignment="Left" Width="64" Height="64" Margin="226.8,32,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
-        <Image x:Name="image_1_5" HorizontalAlignment="Left" Width="64" Height="64" Margin="290.8,32,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
-        <Image x:Name="image_2_1" HorizontalAlignment="Left" Width="64" Height="64" Margin="34.8,96,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
-        <Image x:Name="image_2_2" HorizontalAlignment="Left" Width="64" Height="64" Margin="98.8,96,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
-        <Image x:Name="image_2_3" HorizontalAlignment="Left" Width="64" Height="64" Margin="162.8,96,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
-        <Image x:Name="image_2_4" HorizontalAlignment="Left" Width="64" Height="64" Margin="226.8,96,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
-        <Image x:Name="image_2_5" HorizontalAlignment="Left" Width="64" Height="64" Margin="290.8,96,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
-        <Image x:Name="image_3_1" HorizontalAlignment="Left" Width="64" Height="64" Margin="34.8,160,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
-        <Image x:Name="image_3_2" HorizontalAlignment="Left" Width="64" Height="64" Margin="98.8,160,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
-        <Image x:Name="image_3_3" HorizontalAlignment="Left" Width="64" Height="64" Margin="162.8,160,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
-        <Image x:Name="image_3_4" HorizontalAlignment="Left" Width="64" Height="64" Margin="226.8,160,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
-        <Image x:Name="image_3_5" HorizontalAlignment="Left" Width="64" Height="64" Margin="290.8,160,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
-        <Image x:Name="image_4_1" HorizontalAlignment="Left" Width="64" Height="64" Margin="34.8,224,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
-        <Image x:Name="image_4_2" HorizontalAlignment="Left" Width="64" Height="64" Margin="98.8,224,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
-        <Image x:Name="image_4_3" HorizontalAlignment="Left" Width="64" Height="64" Margin="162.8,224,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
-        <Image x:Name="image_4_4" HorizontalAlignment="Left" Width="64" Height="64" Margin="226.8,224,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
-        <Image x:Name="image_4_5" HorizontalAlignment="Left" Width="64" Height="64" Margin="290.8,224,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
-        <Image x:Name="image_5_1" HorizontalAlignment="Left" Width="64" Height="64" Margin="34.8,288,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
-        <Image x:Name="image_5_2" HorizontalAlignment="Left" Width="64" Height="64" Margin="98.8,288,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
-        <Image x:Name="image_5_3" HorizontalAlignment="Left" Width="64" Height="64" Margin="162.8,288,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
-        <Image x:Name="image_5_4" HorizontalAlignment="Left" Width="64" Height="64" Margin="226.8,288,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
-        <Image x:Name="image_5_5" HorizontalAlignment="Left" Width="64" Height="64" Margin="290.8,288,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
-        <Image x:Name="kimpan" Grid.Column="1" HorizontalAlignment="Left" Height="67" Margin="175.8,152,0,0" VerticalAlignment="Top" Width="46" Source="kimpanförFAN.png"/>
-        <Image x:Name="background" HorizontalAlignment="Left" Height="320" Margin="32,26,0,0" VerticalAlignment="Top" Width="320" Source="ForestBackground.jpg"/>
-        <Image x:Name="kimpan_BIG" HorizontalAlignment="Left" Height="128" Margin="63,183,0,0" VerticalAlignment="Top" Width="91" Source="kimpanförFAN.png"/>
-        <TextBox x:Name="Log" HorizontalAlignment="Left" FontSize="20" Height="646" Margin="437,78,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="381"/>
-        <Image x:Name="Enemy" HorizontalAlignment="Left" Height="159" Margin="192,152,0,0" VerticalAlignment="Top" Width="160" Source="{DynamicResource Mygga}"/>
-        <TextBox x:Name="KimHP" HorizontalAlignment="Left" Height="26" Margin="32,351,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="106"/>
-        <TextBox x:Name="EnemyHP" HorizontalAlignment="Left" Height="26" Margin="246,351,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="106"/>
-        <TextBlock x:Name="Titel" HorizontalAlignment="Left" Height="47" Margin="437,26,0,0" FontSize="30" TextAlignment="Center" TextWrapping="Wrap" Text="KimQuest" VerticalAlignment="Top" Width="381"/>
+        <Image x:Name="BackgroundPlate" HorizontalAlignment="Left" Height="800" VerticalAlignment="Top" Width="1328" Grid.ColumnSpan="2" Source="woodBackgroundPlate.jpg"/>
+        <Rectangle Fill="Black"  HorizontalAlignment="Left" Height="367" Margin="858,18,0,0" Stroke="Black" VerticalAlignment="Top" Width="374" Grid.ColumnSpan="2" />
+
+        <Image x:Name="image_1_1" HorizontalAlignment="Left" Width="64" Height="64" Margin="883,40,0,0" VerticalAlignment="Top" Source="{DynamicResource Ocean}" Grid.ColumnSpan="2"/>
+        <Image x:Name="image_1_2" HorizontalAlignment="Left" Width="64" Height="64" Margin="63.8,40,0,0" VerticalAlignment="Top" Source="{DynamicResource Forest}" Grid.Column="1"/>
+        <Image x:Name="image_1_3" HorizontalAlignment="Left" Width="64" Height="64" Margin="127.8,40,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
+        <Image x:Name="image_1_4" HorizontalAlignment="Left" Width="64" Height="64" Margin="191.8,40,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
+        <Image x:Name="image_1_5" HorizontalAlignment="Left" Width="64" Height="64" Margin="255.8,40,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
+        <Image x:Name="image_2_1" HorizontalAlignment="Left" Width="64" Height="64" Margin="883,104,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.ColumnSpan="2"/>
+        <Image x:Name="image_2_2" HorizontalAlignment="Left" Width="64" Height="64" Margin="63.8,104,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
+        <Image x:Name="image_2_3" HorizontalAlignment="Left" Width="64" Height="64" Margin="127.8,104,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
+        <Image x:Name="image_2_4" HorizontalAlignment="Left" Width="64" Height="64" Margin="191.8,104,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
+        <Image x:Name="image_2_5" HorizontalAlignment="Left" Width="64" Height="64" Margin="255.8,104,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
+        <Image x:Name="image_3_1" HorizontalAlignment="Left" Width="64" Height="64" Margin="883,168,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.ColumnSpan="2"/>
+        <Image x:Name="image_3_2" HorizontalAlignment="Left" Width="64" Height="64" Margin="63.8,168,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
+        <Image x:Name="image_3_3" HorizontalAlignment="Left" Width="64" Height="64" Margin="127.8,168,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
+        <Image x:Name="image_3_4" HorizontalAlignment="Left" Width="64" Height="64" Margin="191.8,168,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
+        <Image x:Name="image_3_5" HorizontalAlignment="Left" Width="64" Height="64" Margin="255.8,168,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
+        <Image x:Name="image_4_1" HorizontalAlignment="Left" Width="64" Height="64" Margin="883,232,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.ColumnSpan="2"/>
+        <Image x:Name="image_4_2" HorizontalAlignment="Left" Width="64" Height="64" Margin="63.8,232,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
+        <Image x:Name="image_4_3" HorizontalAlignment="Left" Width="64" Height="64" Margin="127.8,232,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
+        <Image x:Name="image_4_4" HorizontalAlignment="Left" Width="64" Height="64" Margin="191.8,232,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
+        <Image x:Name="image_4_5" HorizontalAlignment="Left" Width="64" Height="64" Margin="255.8,232,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
+        <Image x:Name="image_5_1" HorizontalAlignment="Left" Width="64" Height="64" Margin="883,296,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.ColumnSpan="2"/>
+        <Image x:Name="image_5_2" HorizontalAlignment="Left" Width="64" Height="64" Margin="63.8,296,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
+        <Image x:Name="image_5_3" HorizontalAlignment="Left" Width="64" Height="64" Margin="127.8,296,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
+        <Image x:Name="image_5_4" HorizontalAlignment="Left" Width="64" Height="64" Margin="191.8,296,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
+        <Image x:Name="image_5_5" HorizontalAlignment="Left" Width="64" Height="64" Margin="255.8,296,0,0" VerticalAlignment="Top" Source="{DynamicResource Plains}" Grid.Column="1"/>
+        <Image x:Name="kimpan" Grid.Column="1" HorizontalAlignment="Left" Height="67" Margin="127.8,160,0,0" VerticalAlignment="Top" Width="64" Source="kimpanförFAN.png"/>
+        <Image x:Name="background" HorizontalAlignment="Left" Height="320" Margin="40,38,0,0" VerticalAlignment="Top" Width="320" Source="ForestBackground.jpg"/>
+        <Image x:Name="kimpan_BIG" HorizontalAlignment="Left" Height="128" Margin="53,195,0,0" VerticalAlignment="Top" Width="128" Source="kimpanförFAN.png"/>
+        <TextBox x:Name="Log" HorizontalAlignment="Left" FontSize="20" Height="646" Margin="415,70,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="381" Background="Beige"/>
+        <Image x:Name="Enemy" HorizontalAlignment="Left" Height="200" Margin="167,123,0,0" VerticalAlignment="Top" Width="200" Source="{DynamicResource Mygga}"/>
+        <TextBox x:Name="KimHP" HorizontalAlignment="Left" Height="26" Margin="40,364,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="106"/>
+        <TextBox x:Name="EnemyHP" HorizontalAlignment="Left" Height="26" Margin="254,364,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="106"/>
+        <TextBlock x:Name="Titel" HorizontalAlignment="Left" Height="47" Margin="415,18,0,0" FontSize="30" TextAlignment="Center" TextWrapping="Wrap" Text="KimQuest" VerticalAlignment="Top" Width="381"/>
 
     </Grid>
 </Window>
