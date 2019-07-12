@@ -26,12 +26,12 @@ namespace GameDemo1
             if (damageTaken < Health)
             {
                 Health -= damageTaken;
-                return $"{monsterName} smäll dig för {damageTaken} skada!";
+                return $"{monsterName} smäll tillbax för {damageTaken} skada!";
             }
             else
             {
                 Health -= damageTaken;
-                return $"{monsterName} smäll dig för {damageTaken} skada! \nDu är FAN SMÄÄÄÄCKAAAD!";
+                return $"{monsterName} smäll tillbax för {damageTaken} skada! \nDu är FAN SMÄÄÄÄCKAAAD!";
             }
 
         }

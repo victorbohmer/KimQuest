@@ -22,7 +22,7 @@ namespace GameDemo1
     {
         Map map = new Map();
         Combat combat = new Combat();
-        string gameMode = "Map";
+        GameMode gameMode = GameMode.Map;
         public MainWindow()
         {
             InitializeComponent();
@@ -35,15 +35,18 @@ namespace GameDemo1
         private void InputReceived(object sender, KeyEventArgs e)
         {
             var keyDown = e.Key;
+
             switch (gameMode)
             {
-                case "Map":
+                case GameMode.Map:
                     map.TryToMove(KeyParser.Direction(keyDown));
                     DrawMap();
                     RollForEncounter();
                     break;
-                case "Combat":
+                case GameMode.Combat:
                     CombatRound(keyDown);
+                    break;
+                case GameMode.PlayerLost:
                     break;
                 default:
                     break;
@@ -61,7 +64,7 @@ namespace GameDemo1
                 Enemy.Source = (ImageSource)FindResource(combat.attackingMonster.Name);
                 Log.Text += $"\nDu blev anfallen av en {combat.attackingMonster.Name.ToLower()}!";
                 EnemyHP.Text = $"Enemy HP: {combat.attackingMonster.Health}";
-                gameMode = "Combat";
+                gameMode = GameMode.Combat;
             }
                 
         }
@@ -80,13 +83,13 @@ namespace GameDemo1
                 case CombatOutcome.PlayerLost:
                     kimpan.Source = (ImageSource)FindResource("KimpanDöd");
                     kimpan_BIG.Source = (ImageSource)FindResource("KimpanDöd");
-                    gameMode = "PlayerLost";
+                    gameMode = GameMode.PlayerLost;
                     break;
                 case CombatOutcome.PlayerWon:
                     EnemyHP.Text = "";
                     Enemy.Source = (ImageSource)FindResource("NoEnemy");
                     Log.Text = "Du vann!";
-                    gameMode = "Map";
+                    gameMode = GameMode.Map;
                     break;
                 default:
                     break;
