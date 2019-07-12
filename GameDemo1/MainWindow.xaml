@@ -15,6 +15,7 @@
         <BitmapImage x:Key="Mygga" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="Mygga.png"/>
         <BitmapImage x:Key="NoEnemy" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="NoEnemy.png"/>
         <BitmapImage x:Key="Björn" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="Björn.png"/>
+        <BitmapImage x:Key="Pikachu" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="pikachu.png"/>
         <BitmapImage x:Key="NollÅtta" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="NollÅtta.png"/>
         <BitmapImage x:Key="KimpanDöd" CreateOptions="IgnoreImageCache" CacheOption="OnLoad" UriSource="KimpanDöd.png"/>
 

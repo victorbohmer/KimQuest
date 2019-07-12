@@ -75,7 +75,7 @@ namespace GameDemo1
         private Monster GetRandomMonster()
         {
 
-            int monsterType = random.Next(3);
+            int monsterType = random.Next(4);
 
             switch (monsterType)
             {
@@ -83,6 +83,8 @@ namespace GameDemo1
                     return new Björn();
                 case 2:
                     return new NollÅtta();
+                case 3:
+                    return new Pikachu();
                 default:
                     return new Mygga();
             }
