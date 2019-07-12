@@ -15,6 +15,7 @@ namespace GameDemo1
             NameSubject = "Björnen";
             minDamage = 8;
             maxDamage = 12;
+            MonsterXp = 60;
         }
     }
 }

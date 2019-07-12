@@ -29,9 +29,18 @@ namespace GameDemo1
             CreateMap();
             DrawMap();
             combat = new Combat(Log);
-            KimHP.Text = $"Kim HP: {Player.Health}";
+
+            UpdateKimStats();
+            
             Enemy.Source = (ImageSource)FindResource("NoEnemy");
             
+        }
+
+        private void UpdateKimStats()
+        {
+            KimHP.Text = $"HP: {Player.Health}";
+            KimXP.Text = $"XP: {Player.Experience} / {Player.ExperinceToLevelUp}";
+            KimLevel.Text = $"Level: {Player.Level}";
         }
 
         private void InputReceived(object sender, KeyEventArgs e)
@@ -65,7 +74,7 @@ namespace GameDemo1
                 combat.NewMonster();
                 Enemy.Source = (ImageSource)FindResource(combat.attackingMonster.Name);
                 Log.Text += $"\nDu blev anfallen av en {combat.attackingMonster.Name.ToLower()}!";
-                EnemyHP.Text = $"Enemy HP: {combat.attackingMonster.Health}";
+                EnemyHP.Text = $"{combat.attackingMonster.Name} HP: {combat.attackingMonster.Health}";
                 gameMode = GameMode.Combat;
             }
                 
@@ -75,7 +84,7 @@ namespace GameDemo1
         {
             
             CombatOutcome outcome = combat.CombatRound();
-            KimHP.Text = $"Kim HP: {Player.Health}";
+            UpdateKimStats();
             EnemyHP.Text = $"Enemy HP: {combat.attackingMonster.Health}";
 
             switch (outcome)
@@ -90,7 +99,6 @@ namespace GameDemo1
                 case CombatOutcome.PlayerWon:
                     EnemyHP.Text = "";
                     Enemy.Source = (ImageSource)FindResource("NoEnemy");
-                    Log.Text = "Du vann!";
                     gameMode = GameMode.Map;
                     break;
                 default:

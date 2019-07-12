@@ -16,6 +16,12 @@ namespace GameDemo1
         protected int minGold;
         protected int maxGold;
 
+        protected int MonsterXp;
+
+        public int GiveExp()
+        {
+            return MonsterXp;
+        }
         public int DropGold()
         {
             Random random = new Random();

@@ -32,7 +32,11 @@ namespace GameDemo1
 
             if (combatOutcome == CombatOutcome.PlayerWon)
             {
+                textBox.Text = "";
+                LogPlayerDamage(playerDamage);
                 LogPlayerWon();
+                string xpText = Player.AddExperience(attackingMonster.GiveExp());
+                textBox.Text += "\n" + xpText;
                 return combatOutcome;
             }
 
@@ -58,7 +62,7 @@ namespace GameDemo1
 
         private void LogPlayerWon()
         {
-            textBox.Text += $"\nBOOM!! Du SMÄÄÄÄCKAAA {attackingMonster.NameSubject.ToLower()}!";
+            textBox.Text += $"\nBOOM!! Du SMÄÄÄÄCKAAADE {attackingMonster.NameSubject.ToLower()}!";
         }
 
         private void LogPlayerDamage(int playerDamage)

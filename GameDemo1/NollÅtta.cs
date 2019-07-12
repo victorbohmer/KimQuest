@@ -15,6 +15,7 @@ namespace GameDemo1
             NameSubject = "Nollåttan";
             minDamage = 4;
             maxDamage = 10;
+            MonsterXp = 20;
         }
     }
 }

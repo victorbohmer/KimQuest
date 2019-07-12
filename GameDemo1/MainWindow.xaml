@@ -59,9 +59,11 @@
         <Image x:Name="kimpan_BIG" HorizontalAlignment="Left" Height="128" Margin="53,195,0,0" VerticalAlignment="Top" Width="128" Source="kimpanförFAN.png"/>
         <TextBox x:Name="Log" HorizontalAlignment="Left" FontSize="20" Height="646" Margin="415,70,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="381" Background="Beige"/>
         <Image x:Name="Enemy" HorizontalAlignment="Left" Height="200" Margin="167,123,0,0" VerticalAlignment="Top" Width="200" Source="{DynamicResource Mygga}"/>
-        <TextBox x:Name="KimHP" HorizontalAlignment="Left" Height="26" Margin="40,364,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="106"/>
-        <TextBox x:Name="EnemyHP" HorizontalAlignment="Left" Height="26" Margin="254,364,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="106"/>
+        <TextBox x:Name="KimHP" HorizontalAlignment="Left" TextAlignment="Center" Height="20" Margin="40,371,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="83"/>
+        <TextBox x:Name="EnemyHP" HorizontalAlignment="Left" TextAlignment="Center" Height="20" Margin="150,414,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="106"/>
         <TextBlock x:Name="Titel" HorizontalAlignment="Left" Height="47" Margin="415,18,0,0" FontSize="30" Foreground="LightYellow"  TextAlignment="Center" TextWrapping="Wrap" Text="KimQuest" VerticalAlignment="Top" Width="381"/>
+        <TextBox x:Name="KimXP" HorizontalAlignment="Left" TextAlignment="Center" Height="20" Margin="167,371,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="83"/>
+        <TextBox x:Name="KimLevel" HorizontalAlignment="Left" TextAlignment="Center" Height="20" Margin="284,371,0,0" TextWrapping="Wrap" Text=" Häst" VerticalAlignment="Top" Width="83"/>
 
     </Grid>
 </Window>

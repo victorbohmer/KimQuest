@@ -52,7 +52,7 @@ namespace GameDemo1
             }
             else
             {
-               return $"Du fick {experienceGained} och har kvar {resultOfAddedExperience} till nästa level!";
+               return $"Du fick {experienceGained} xp och har kvar {resultOfAddedExperience} xp till nästa level!";
             }
         }
         static void LevelUp()

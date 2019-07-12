@@ -15,6 +15,7 @@ namespace GameDemo1
             NameSubject = "Pikachun";
             minDamage = 4;
             maxDamage = 6;
+            MonsterXp = 25;
         }
     }
 }

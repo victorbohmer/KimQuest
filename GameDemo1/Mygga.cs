@@ -15,6 +15,7 @@ namespace GameDemo1
             NameSubject = "Myggan";
             minDamage = 4;
             maxDamage = 8;
+            MonsterXp = 30;
         }
     }
 }
