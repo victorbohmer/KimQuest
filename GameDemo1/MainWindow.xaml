@@ -27,7 +27,9 @@
         </Grid.ColumnDefinitions>
 
         <Image x:Name="BackgroundPlate" HorizontalAlignment="Left" Height="800" VerticalAlignment="Top" Width="1328" Grid.ColumnSpan="2" Source="woodBackgroundPlate.jpg"/>
-        <Rectangle Fill="Black"  HorizontalAlignment="Left" Height="367" Margin="858,18,0,0" Stroke="Black" VerticalAlignment="Top" Width="374" Grid.ColumnSpan="2" />
+        <Rectangle Fill="Black"  HorizontalAlignment="Left" Height="349" Margin="866,25,0,0" Stroke="Black" VerticalAlignment="Top" Width="353" Grid.ColumnSpan="2" />
+        <Rectangle Fill="Black"  HorizontalAlignment="Left" Height="346" Margin="27,25,0,0" Stroke="Black" VerticalAlignment="Top" Width="348" />
+
 
         <Image x:Name="image_1_1" HorizontalAlignment="Left" Width="64" Height="64" Margin="883,40,0,0" VerticalAlignment="Top" Source="{DynamicResource Ocean}" Grid.ColumnSpan="2"/>
         <Image x:Name="image_1_2" HorizontalAlignment="Left" Width="64" Height="64" Margin="63.8,40,0,0" VerticalAlignment="Top" Source="{DynamicResource Forest}" Grid.Column="1"/>
@@ -59,11 +61,11 @@
         <Image x:Name="kimpan_BIG" HorizontalAlignment="Left" Height="128" Margin="53,195,0,0" VerticalAlignment="Top" Width="128" Source="kimpanförFAN.png"/>
         <TextBox x:Name="Log" HorizontalAlignment="Left" FontSize="20" Height="646" Margin="415,70,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="381" Background="Beige"/>
         <Image x:Name="Enemy" HorizontalAlignment="Left" Height="200" Margin="167,123,0,0" VerticalAlignment="Top" Width="200" Source="{DynamicResource Mygga}"/>
-        <TextBox x:Name="KimHP" HorizontalAlignment="Left" TextAlignment="Center" Height="20" Margin="40,371,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="83"/>
-        <TextBox x:Name="EnemyHP" HorizontalAlignment="Left" TextAlignment="Center" Height="20" Margin="150,414,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="106"/>
         <TextBlock x:Name="Titel" HorizontalAlignment="Left" Height="47" Margin="415,18,0,0" FontSize="30" Foreground="LightYellow"  TextAlignment="Center" TextWrapping="Wrap" Text="KimQuest" VerticalAlignment="Top" Width="381"/>
-        <TextBox x:Name="KimXP" HorizontalAlignment="Left" TextAlignment="Center" Height="20" Margin="167,371,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="83"/>
-        <TextBox x:Name="KimLevel" HorizontalAlignment="Left" TextAlignment="Center" Height="20" Margin="284,371,0,0" TextWrapping="Wrap" Text=" Häst" VerticalAlignment="Top" Width="83"/>
+        <TextBox x:Name="KimHP" HorizontalAlignment="Left" FontSize="20" TextAlignment="Center" Height="29" Margin="40,376,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="91"/>
+        <TextBox x:Name="EnemyHP" HorizontalAlignment="Left" FontSize="20" TextAlignment="Center" Height="30" Margin="91,420,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="240"/>
+        <TextBox x:Name="KimXP" HorizontalAlignment="Left" FontSize="20" TextAlignment="Center" Height="29" Margin="144,376,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="124"/>
+        <TextBox x:Name="KimLevel" HorizontalAlignment="Left" FontSize="20" TextAlignment="Center" Height="29" Margin="285,376,0,0" TextWrapping="Wrap" Text=" Häst" VerticalAlignment="Top" Width="82"/>
 
     </Grid>
 </Window>

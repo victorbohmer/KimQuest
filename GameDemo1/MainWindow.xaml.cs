@@ -50,6 +50,7 @@ namespace GameDemo1
             switch (gameMode)
             {
                 case GameMode.Map:
+                    Log.Text = "";
                     map.TryToMove(KeyParser.Direction(keyDown));
                     DrawMap();
                     RollForEncounter();

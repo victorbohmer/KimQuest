@@ -32,7 +32,6 @@ namespace GameDemo1
 
             if (combatOutcome == CombatOutcome.PlayerWon)
             {
-                textBox.Text = "";
                 LogPlayerDamage(playerDamage);
                 LogPlayerWon();
                 string xpText = Player.AddExperience(attackingMonster.GiveExp());
